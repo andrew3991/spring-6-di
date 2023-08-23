@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service;
 /**
  * Created by jt, Spring Framework Guru.
  */
-@Service
-public class GreetingServiceImpl implements GreetingService {
+@Service("propertyGreetingService")
+public class GreetingServicePropertyInjected implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello Everyone From Base Service!!!";
+        return "Friends don't let friends to property injection!!!!";
     }
 }
